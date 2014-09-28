@@ -2,84 +2,192 @@
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
-      <title>Guy Turner - Project 2 Milestone 1</title>
+      <title>Code by Guy - Visual Biography Milestone 1</title>
+      
+      <link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+
+      <style>
+      
+	body {
+	    background-color: white;
+	}
+
+       img.main {
+           position:       fixed;
+           left:           300px;
+           top:            300px;
+           pointer-events: none;
+           z-index:        5;
+       }
+
+       div.banner {
+           background-color: #E1E1E1;
+           width:            100%;
+           height:           1000px;
+           position:         fixed;
+           top:              200px;
+           z-index:          -1;
+       }
+
+       div.navigation {
+           width:       1250px;
+           height:      75px;
+           position:    fixed;
+           top:         975px;
+           left:        1127px;
+           z-index:     6;  
+           overflow:    hidden;
+           white-space: nowrap;
+       }
+
+       div.button {
+           background-color: white;
+           height:           75px;
+           width:            175px;
+           font-family:      Verdana;
+           font-size:        25px;
+       }
+ 
+       div.button:hover {
+           background-color: #EE3D43;
+       }
+
+       a.button {
+           margin-right:     25px;
+           float:            left;
+           text-decoration:  none;
+           text-align:       center;
+       }
+
+       a:link {
+           color: black;
+       }
+
+       a:visited {
+           color: black;
+       }
+
+	div.main {
+           background-color: #EE3D43;
+           width:            1907px;
+           height:           800px;
+           position:         fixed;
+           left:             545px;
+           top:              300px;
+           z-index:          -1;
+           overflow-x:       auto;
+           overflow-y:       hidden;
+       }
+
+	div.header {
+           width:            100%;
+           height:           95px;
+           position:         absolute;
+           top:              -15px;
+           left:             1350px;
+           overflow:         hidden;
+           white-space:      nowrap;
+	}
+
+       div.home {
+           height:       515px;
+           top:          125px;
+           left:         100px;
+           margin-right: 1345px;
+           float:        left;
+       }
+
+       p.title {
+           font-family:      'Andika', sans-serif;
+           font-size:        38px;
+           color:            white;
+           float:            left;
+       }
+
+       div.content {
+           width:       5000px;
+           height:      515px;
+           position:    absolute;
+           top:         125px;
+           left:        100px;
+           text-align:  justify;
+           overflow:    hidden;
+       }
+
+       div.paragraph {
+           font-family: Verdana;
+           font-size:   25px;
+           width:       500px;
+           height:      100%;
+           overflow:    hidden;
+           float:       left;
+           margin-right: 50px;
+       }
+
+       img.content {
+           border:       1px solid black;
+           height:       100%;
+           float:        left;
+           margin-right: 80px;
+       }
+
+      </style>
     </head>
   <body>
-  
-    <h2> Anthony Kiedis </h2>
-    
-    <p>
-      <a href="http://www.biography.com/people/anthony-kiedis-380596" target=_blank>(Source)</a>
-    </p>
 
-    <p>
-    Anthony Kiedis, the energetic singer of the alternative rock group the Red Hot Chili Peppers, was born on November 1, 1962, in Grand Rapids, Michigan. After getting into trouble at school, he moved to California to be with his dad. It was during these years that young Kiedis was exposed and influenced by the world of art, sex, music and drugs. The Chili Peppers' 1991 alternative rock album, BloodSugarSexMagik, was a career breakthrough for the band, selling more than 4 million copies. Later albums include One Hot Minute (1995), featuring the hit songs "Aeroplane" and "My Friends"; Californication (1999), which included the hits "Around the World" and "Scar Tissue"; and I'm With You (2011), featuring "The Adventures of Rain Dance Maggie."
-    </p>    
+    <img class="main" src="img/vsb_bg.gif" />
 
-    <p>
-    Famed singer, actor and writer Anthony Kiedis was born on November 1, 1962, in Grand Rapids, Michigan. As the lead singer of the Red Hot Chili Peppers, Kiedis is one of best-known figures in alternative rock. His godfather was Sonny Bono, of Sonny & Cher fame. His parents split when Kiedis was 3 years old. Thereafter, he lived with his mother, Peggy, in Michigan and visited his father, John, in California. His father made most of his money selling drugs, but also dabbled in acting. While with his father, Kiedis was exposed to the Los Angeles club scene, where he got a chance to see such rock acts as the Eagles, Neil Young, Deep Purple and Rod Stewart.
-    </p>
+    <div class="banner"> </div>
 
-    <p>
-    Developing an aversion to authority at an early age, Kiedis acted out in school. He eventually convinced his mother to agree to let him live with his father in California. In his early teens, Kiedis moved in with his father and soon began experimenting with drugs. He started smoking marijuana and later tried heroin, cocaine, and Quaaludes.
-    </p>
+    <div class="navigation">
+        <a class="button" href="#home"><div class="button"> <br>Home </div></a>
+        <a class="button" href="#early_life"><div class="button"> <br>Early Life </div></a>
+        <a class="button" href=""><div class="button"> </div></a>
+        <a class="button" href=""><div class="button"> </div></a>
+        <a class="button" href="index.html"><div class="button"> <br>VSB Home </div></a>
+        <a class="button" href="../../index.html"><div class="button"> <br>T284 Home </div></a>
+    </div>
 
-    <p>
-    His father earned much of his money from dealing marijuana and other illegal substances, according to Scar Tissue, Kiedis's later-released autobiography. By the mid-1970s, John Kiedis had decided to try to make as an actor, taking classes and the stage name "Blackie Dammet." Anthony also began acting, using his own stage name, "Cole Dammet." He landed a few commercials and small parts.
-    </p>
+    <div class="main">
 
-    <p>
-    At Fairfax High School, Kiedis met and made friends with Michael Balzary - better known later as Flea - and Hillel Slovak. Slovak had a band known as Anthym and Balzary eventually joined it as the bass player. Kiedis acted as the MC for some of their gigs. They were also interested in the emerging punk scene and caught shows by such acts as Black Flag.
-    </p>
+        <div class="header">
+        <p class="title" style="margin-right: 880px">The Life of Anthony Kiedis</p>
+        <p class="title">Early Life</p>
+        </div>
+        
+        <a id="home"> </a>
+        <div class="content">
+            <div class="home"> </div>
 
-    <p>
-    Kiedis moved out of his father's place to live with a friend during the latter part of high school. Despite living in the midst of a party scene, he was able to keep up his grades. Kiedis did well enough to get accepted to UCLA. College, however, did not hold his interest for long.
-    </p>
+            <img class="content" src="img/vsb_4.jpg" />
 
-    <p>
-    In 1982, Kiedis found inspiration for his vocal styling from the hit song, "The Message," from Grandmaster Flash and the Furious Five. He started a band with friends Slovak and Flea - although they were already in different bands - with Jack Irons on drums the following year.
-    </p>
+            <a id="early_life"> </a>
+            <div class="paragraph">
+ Anthony Kiedis, the energetic singer of the alternative rock group the Red Hot Chili Peppers, was born on November 1, 1962, in Grand Rapids, Michigan. After getting into trouble at school, he moved to California to be with his dad. It was during these years that young Kiedis was exposed and influenced by the world of art, sex, music and drugs. The Chili Peppers' 1991 alternative rock album, BloodSugarSexMagik, was a career breakthrough for the band, selling more than 4 million copies. Later albums include One Hot Minute (1995), featuring the hit songs 
+            </div>
 
-    <p>
-    The group that would become known as the Red Hot Chili Peppers became a popular fixture on the L.A. club scene.
-    </p>
+            <div class="paragraph">
+"Aeroplane" and "My Friends"; Californication (1999), which included the hits "Around the World" and "Scar Tissue"; and I'm With You (2011), featuring "The Adventures of Rain Dance Maggie."
 
-    <p>
-    The group quickly went through a line-up change when Slovak and Irons left when their other band What Is This landed a record deal. Kiedis and Flea pressed on with their innovative funk-punk sound, bringing in guitarist Jack Sherman and drummer Cliff Martinez.
-    </p>
+Famed singer, actor and writer Anthony Kiedis was born on November 1, 1962, in Grand Rapids, Michigan. As the lead singer of the Red Hot Chili Peppers, Kiedis is one of best-known figures in alternative rock. His godfather was Sonny Bono, of Sonny & Cher fame. His parents split when Kiedis was 3 years old. Thereafter, he lived with his mother, Peggy, in Michigan and 
+            </div>
 
-    <p>
-    Their 1984 self-titled debut didn't sell, but the group started to attract a following with their energetic live shows. Often over-the-top rebels, the Red Hot Chili Peppers even performed a few times while only wearing strategically placed tube socks. For their second effort, Freaky Styley, the group enlisted the help of funk superstar George Clinton to serve as their producer. The album also marked the return of Slovak and Irons to the band.
-    </p>
+            <div class="paragraph">
+visited his father, John, in California. His father made most of his money selling drugs, but also dabbled in acting. While with his father, Kiedis was exposed to the Los Angeles club scene, where he got a chance to see such rock acts as the Eagles, Neil Young, Deep Purple and Rod Stewart.
 
-    <p>
-    Kiedis's off-stage activities were starting to take over his life. He was using heroin and cocaine heavily, so much so that his bandmates kicked him out of the group for a while. Returning to Michigan for a time, Kiedis went through detox. He returned to Los Angeles and to the band, but did not stay clean for long.
-    </p>
+Developing an aversion to authority at an early age, Kiedis acted out in school. He eventually convinced his mother to agree to let him live with his father in California. In his early teens, Kiedis moved in with his father and soon began experimenting with drugs. He started smoking marijuana and later tried heroin, cocaine, and Quaaludes.
+            </div>
 
-    <p>
-    The Red Hot Chili Peppers released their third album, The Uplift Mofo Party Plan, in 1987. The album even made it onto the Billboard 200 album charts. The following year, Kiedis experienced a great personal loss. Longtime friend and bandmate Slovak died of a heroin overdose on June 25, 1988. After this tragedy, Irons decided to leave the band and Kiedis eventually went to a rehabilitation center.
-    </p>
+        </div>
 
-    <p>
-    Trying to regroup, Kiedis and Flea added guitarist Blackbyrd McKnight and drummer D.H. Peligro to the group, but this line up didn't work out. They then brought in guitarist John Frusciante and drummer Chad Smith and recorded Mother's Milk. They began attracting more fans and more media attention. MTV aired videos for two tracks - "Knock Me Down" and their cover of Steve Wonder's hit "Higher Ground."
-    </p>
+    </div>
 
-    <p>
-    Working with producer Rick Rubin, the Red Hot Chili Peppers experienced a major career breakthrough with their next album, BloodSugarSexMagik, in 1991. The album sold more than 4 million copies, due in no small part to hits like "Under the Bridge," "Give It Away" and "Suck My Kiss." Frusciante ended up leaving the group before it joined the alternative music tour Lollapalooza in 1992.
-    </p>
-
-    <p>
-    After a few false starts, the Chili Peppers eventually replaced Frusciante with guitarist Dave Navarro, once with Jane's Addiction. This latest lineup recorded 1995's One Hot Minute, which went platinum. "Aeroplane" and "My Friends" were two of the biggest hits from the album.
-    </p>
-
-    <p>
-    By the time the Red Hot Chili Peppers released their 1999 hit record Californication, Frusciante was back in the band, replacing Navarro who left to pursue solo projects. "Around the World," "Scar Tissue" and the title track all did well on the rock charts. 2002's By the Way was also a strong seller, making it to the number two spot on the Billboard 200.
-    </p>
-
+    <!--
     <p>
       <a href="index.html">Back to Visual Song / Biography Page</a>
       <br><a href="../../index.html">Back to Home Page</a>
     </p>
+    -->
 
   </body>
 </html>
