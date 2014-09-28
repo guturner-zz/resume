@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guy Turner - HTML 5 Resume</title>
+	
+	<style>
+		div {
+			width: 1200px;
+		}
+	
+		div.navBar {
+			background-color: #F0F0F0;
+			border:           2px dashed black;
+			border-radius:    10px;
+			font-size:        20px;
+			padding-left:     5px;
+			padding-top:      2px;
+			padding-bottom:   2px;
+			text-align:       left;
+			width:            97%;
+			height:      	    25px;
+			margin:           10px auto;
+		}
+
+		div.titleBar {
+			font-family:    Verdana;
+			font-size:      15px;
+			font-weight:    bold;
+			border:         1px solid black;
+			border-top:     0px;
+			border-left:    0px;
+			border-right:   0px;
+			text-align:     left;
+			padding-bottom: 5px;
+		}
+
+		div.footer {
+			font-family:    Verdana;
+			font-size:      15px;
+			font-weight:    bold;
+			border:         1px solid black;
+			border-bottom:  0px;
+			border-left:    0px;
+			border-right:   0px;
+			text-align:     center;
+		}
+
+		img.closeBtn {
+			position: relative;
+			height:   15px;
+			width:   15px;
+			left:     73%;
+		}
+
+		body {
+			background-image:      url("img/bg.jpg");
+			background-position:   50% 50%;
+			background-attachment: fixed;
+		}
+
+		h2 {
+			background-color: #D8D8D8;
+			font-family:      Verdana;
+			text-align:       center;
+		}
+
+		h2.intro {
+			background-color: white;
+                     font-family:	    Verdana;
+			color:	           #FF8700;
+			text-align:	    left;
+		}
+		
+		div.notepadWindow {
+			background-color: #F0F0F0;
+			border:           1px solid black;
+			width:            1200px;
+			height:           635px;
+			overflow-x:       hidden;
+			overflow-y:       hidden;
+			margin:           auto;
+		}
+
+		div.codePnl {
+			background-color: white;
+			border:           1px solid black;
+			border-radius:    10px;
+			height:           500px;
+			width:            98%;
+			overflow:         auto;
+			overflow-x:       hidden;
+			overflow-y:       hidden;
+			margin:           5px auto;
+		}
+
+              div.codePnlThin {
+                     background-color: white;
+                     font-family:      Verdana;
+                     width:            85%;
+                     height:           450px;
+                     margin:           auto;
+              }
+
+		div a.title {
+			color:           #4575D4;
+			font-weight:     bold;
+			text-decoration: none;
+		}
+		
+		div a {
+			color:		     #4575D4;
+			text-decoration:   none;
+		}
+
+		div a:hover {
+			color: #29467F;
+		}
+		
+		div.linePnl {
+			text-align:       left;
+			background-color: #E4E4E4;
+			color:            #808080;
+			font-family:      Tahoma;
+			float:            left;
+			width:            20px;
+			height:           1500%;
+		}
+
+		p.body {
+			font-family:    Verdana;
+			padding-bottom: 500px;
+			padding-top: 	  0px;
+		}
+		
+		p.content {
+			background-color: yellow;
+			margin:	    0px 0px 0px 0px;
+			padding:          0px 0px 0px 0px;
+		}
+		
+		span.content {
+			color:            #FF8700;
+			font-size:        15px;
+		}
+
+		span.code {
+			opacity: .40;
+		}
+		
+		span.hilight {
+			display:          block;
+			background-color: #FFFFCA;
+		}
+	</style>
+  </head>
+
+  <body>
+    <div class="notepadWindow">
+		<!-- "Title" Bar -->
+		<div class="titleBar">
+		  <a href="css-final.html"><img src="img/np_icon.png"/>*Guy Turner Resume</a> <span class="code" style="font-weight: normal">- Notepad++</span>
+		  <a href="index.html"><span style="text-align: right"><img class="closeBtn" src="img/close_btn.jpg"/></span></a>
+		</div>
+		
+		<!-- Navigation Bar -->
+		<div class="navBar">
+		  <a class="title" href="#education"> <img src="img/np_link.png"/> education</a>.c |
+		  <a class="title" href="#work"> <img src="img/np_link.png"/> work</a>.java |
+		  <a class="title" href="#skills"> <img src="img/np_link.png"/> skills</a>.pl |
+		  <a class="title" href="#prof_goals"> <img src="img/np_link.png"/> professional_goals</a>.ss |
+		  <a class="title" href="#pers_goals"> <img src="img/np_link.png"/> personal_goals</a>.py |
+		  <a class="title" href="#life_events"> <img src="img/np_link.png"/> life_changing_events</a>.cs |
+		  <a class="title" href="#resources"> <img src="img/np_link.png"/> resources</a>.html
+		</div>
+		
+		<br>
+		
+		<!-- Code Snippets Window -->
+		<!--
+			Note: In order to properly format the code, some escape characters are heavily utilized:
+					&nbsp - Introduces a tab.
+					&lt   - The '<' character.
+					&gt   - The '>' character.
+					&#59  - The ';' character.
+		-->
+		<div class="codePnl">
+		
+			<!-- Intro Window -->
+			<div class="codePnlThin">
+			  <h2 style="background-color: white">Guy Turner</h2>
+			  <h2 style="background-color: white">guturner@indiana.edu</h2>
+			  <p>
+			  <h2 class="intro">Hello World</h2>
+			  <br> As a student of Computer Science and programmer by trade, I often find ways to associate the projects I work on with programming. This resume is an attempt to present the skills that I hope to use in the Computer Science field alongside my passion for programming. <a href="http://en.wikipedia.org/wiki/Hello_world_program" target=_blank>'Hello World!'</a> is every programmer's first step into a new language, and I thought it appropriate to use the concept for my first step into web development. Each page is modeled after the 'Hello World' program for one of the languages I learned during my studies at Indiana University.
+			  </p>
+			</div>
+			
+			<!-- For Styling -->
+			<p class="body"></p>
+			
+			<!-- Line Number Panel -->
+			<div class="linePnl">
+				<p class="body">
+					1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+                                   <br>7
+					<br>8
+					<br>9
+				</p>
+				<p class="body">
+					<br>1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+					<br>7
+					<br>8
+					<br>9
+					<br>10
+					<br>11
+					<br>12
+					<br>13
+				</p>
+				<p class="body">
+					<br>1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+					<br>7
+					<br>8
+				</p>
+				<p class="body">
+					1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+					<br>7
+					<br>8
+					<br>9
+				</p>
+				<p class="body">
+					<br>1
+					<br>2
+					<br>3
+				</p>
+				<p class="body">
+					<br>1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+					<br>7
+					<br>8
+					<br>9
+				</p>
+				<p class="body">
+					<br>1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+					<br>7
+					<br>8
+					<br>9
+					<br>10
+					<br>11
+					<br>12
+				</p>
+			</div>
+		
+			<!-- "Education" Window -->
+			<p class="body">
+			  <a id="education"></a>
+			  
+			  <!-- #include<stdio.h> -->
+			  <br><span class="code" style="color:#804000">&nbsp;#include&lt;stdio.h&gt;</span>
+			  
+			  <br>
+			  
+			  <!-- main() -->
+			  <br><span class="code">&nbsp;main()</span>
+			  
+			  <!-- { -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;{</span>
+			  
+			  <!-- printf(" "); -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;printf("</span>
+			  <span class="content"><strong>Computer Science, Indiana University (<em>2014</em>)</strong></span>
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+
+			  <!-- printf(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;printf("</span>
+			  <span class="content"><strong>Cumulative GPA: 3.92/4.0</strong></span>
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+
+			  <!-- printf(" "); -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;printf("</span>
+			  <span class="content"><strong>Honors: Dean's List (<em>2012-2013</em>)&#59; Phi Eta Sigma and Alpha Lambda Delta Honor Society</strong></span>
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+
+			  <!-- } -->
+			  <span class="code" style="color:#ff0000">&nbsp;}</span>
+			</p>
+
+			<!-- "Work" Window -->
+			<p class="body">
+			  <a id="work"></a>
+			  
+			  <!-- public class Work -->
+			  <br><span class="code" style="color:#8000FF">&nbsp;public class</span> 
+			  <span class="code" style="color:black">Work</span>
+			  
+			  <!-- { -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;{</span>
+			  
+			  <!-- public static void main(String[] args) -->
+			  <br><span class="code" style="color:#8000FF">&nbsp;&nbsp;&nbsp;&nbsp;public static void</span> 
+			  <span class="code" style="color:black">main(String[] args)</span>
+			  
+			  <!-- { -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;&nbsp;&nbsp;&nbsp;{</span>
+			  
+			  <!-- System.out.println(" "); -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("</span> 
+			  <span class="content"><strong>Liberty Mutual Insurance, Software Developer Intern</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+			  
+			  <!-- System.out.println(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("</span> 
+			  <span class="content"><strong>May 2013 - August 2013</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+			  
+			  <!-- System.out.println(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("</span> 
+			  <span class="content"><strong>Developed software using the Groovy and Java programming languages and deployed locally.</strong></span>
+			  <span class="code" style="color:black">")&#59;</span></span>
+			  </span>
+			  
+			  <!-- System.out.println(" "); -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("</span> 
+			  <span class="content"><strong>Indiana University, Bloomington, Undergraduate Instructor</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+			  
+			  <!-- System.out.println(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("</span> 
+			  <span class="content"><strong>January 2013 - May 2013</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+			  
+			  <!-- System.out.println(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("</span> 
+			  <span class="content"><strong>Taught lab twice per week and assisted in grading responsibilities.</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+
+			  <!-- } -->
+			  <span class="code" style="color:#ff0000">&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+			  
+			  <!-- } -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;}</span>
+			  
+			</p>
+
+			<!-- "Skills" Window -->
+			<p class="body">
+			  <a id="skills"></a>
+			  
+			  <!-- #! usr/bin/perl -->
+			  <br><span class="code" style="color:#008000">&nbsp;#! usr/bin/perl</span>
+			  
+			  <!-- use strict; -->
+			  <br><span class="code" style="color:black">&nbsp;use strict&#59;</span>
+			  
+			  <!-- use warnings; -->
+			  <br><span class="code" style="color:black">&nbsp;use warnings&#59;</span>
+			  
+			  <!-- print " "; -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>Proficient Languages: Java, Groovy, C#, C, Python, Scheme</strong></span>
+			  <span class="code" style="color:black">\n"&#59;</span>
+			  </span>
+
+			  <!-- print " "; -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>Familiar Languages: Perl, Haskell</strong></span>
+			  <span class="code" style="color:black">\n"&#59;</span>
+			  </span>
+			  
+			  <!-- print " "; -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>Web Development: ActionScript 3.0, HTML, CSS</strong></span>
+			  <span class="code" style="color:black">\n"&#59;</span>
+			  </span>
+			  
+			  <!-- print " "; -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>Misc.: Adobe Creative Suite, Apache CLI, Microsoft Office, Oracle RDBMS, .NET, Splunk (Logging), SQL, XML</strong></span>
+			  <span class="code" style="color:black">\n"&#59;</span>
+			  </span>
+			</p>
+
+			<!-- "Professional Goals" Window -->
+			<p class="body">
+			  <a id="prof_goals"></a>
+			  
+			  <!-- (define display-goals -->
+			  <br><span class="code" style="color:black">&nbsp;(define display-goals</span>
+			  
+			  <!-- (lambda () -->
+			  <br><span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;(lambda ()</span>
+			  
+			  <!-- (begin -->
+			  <br><span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(begin</span>
+			  
+			  <!-- (write ) -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(write "</span>
+			  <span class="content"><strong>1. Graduate from Indiana University in May 2014 with a degree in Computer Science.</strong></span>
+			  <span class="code" style="color:black">")</span>
+			  </span>
+			  
+			  <!-- (newline) -->
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(newline)</span>
+			  
+			  <!-- (write ) -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(write "</span>
+			  <span class="content"><strong>2. Enter the Computer Science industry as a software developer.</strong></span>
+			  <span class="code" style="color:black">")</span>
+			  </span>
+			  
+			  <!-- (newline) -->
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(newline)</span>
+			  
+			  <!-- (write ) -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(write "</span>
+			  <span class="content"><strong>3. Deploy software on a non-local scale.</strong></span>
+			  <span class="code" style="color:black">")</span>
+			  </span>
+			  
+			  <!-- (newline) -->
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(newline))))</span>
+			</p>
+
+			<!-- "Personal Goals" Window -->
+			<p class="body"> 
+			  <a id="pers_goals"></a>
+			  
+			  <!-- print " " -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>1. Maintain my GPA through this school year.</strong></span>
+			  <span class="code" style="color:black">\n"</span>
+			  </span>
+			  
+			  <!-- print " " -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>2. Save for post-graduation.</strong></span>
+			  <span class="code" style="color:black">\n"</span>
+			  </span>
+			  
+			  <!-- print " " -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;print "</span>
+			  <span class="content"><strong>3. Network with my peers before graduation.</strong></span>
+			  <span class="code" style="color:black">\n"</span>
+			  </span>
+			</p>
+
+			<!-- "Life Events" Window -->
+			<p class="body">
+			  <a id="life_events"></a>
+			  
+			  <!-- public class LifeEvents -->
+			  <br><span class="code" style="color:#8000FF">&nbsp;public class</span> 
+			  <span class="code" style="color:black">LifeEvents</span>
+			  
+			  <!-- { -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;{</span>
+			  
+			  <!-- public static void Main(String[] args) -->
+			  <br><span class="code" style="color:#8000FF">&nbsp;&nbsp;&nbsp;&nbsp;public static void</span> 
+			  <span class="code" style="color:black">Main(String[] args)</span>
+			  
+			  <!-- { -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;&nbsp;&nbsp;&nbsp;{</span>
+			  
+			  <!-- Console.WriteLine(" "); -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("</span> 
+			  <span class="content"><strong>1. High School graduation.</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+			  
+			  <!-- Console.WriteLine(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("</span> 
+			  <span class="content"><strong>2. First year of college.</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+			  
+			  <!-- Console.WriteLine(" "); -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("</span> 
+			  <span class="content"><strong>3. Internship.</strong></span> 
+			  <span class="code" style="color:black">")&#59;</span>
+			  </span>
+
+			  <!-- } -->
+			  <span class="code" style="color:#ff0000">&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+			  
+			  <!-- } -->
+			  <br><span class="code" style="color:#ff0000">&nbsp;}</span>
+			</p>
+
+			<!-- "Resources" Window -->
+			<p class="body">
+			  <a id="resources"></a>
+			  
+			  <!-- <!DOCTYPE html> -->
+			  <br><span class="code" style="color:black">&nbsp;&lt;!DOCTYPE html&gt;</span>
+			  
+			  <!-- <html lang="en"> -->
+			  <br><span class="code" style="color:black">&nbsp;&lt;html lang="en"&gt;</span>
+			  
+			  <!-- <head> -->
+			  <br><span class="code" style="color:black">&nbsp;&lt;head&gt;</span>
+			  
+			  <!-- <meta charset="UTF-8"/> -->
+			  <br><span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;</span>
+			  
+			  <!-- <title>Resources</title> -->
+			  <br><span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Resources&lt;/title&gt;</span>
+			  
+			  <!-- </head> -->
+			  <br><span class="code" style="color:black">&nbsp;&lt;/head&gt;</span>
+			  
+			  <!-- <body> --> 
+			  <br><span class="code" style="color:black">&nbsp;&lt;body&gt;</span>
+			  
+			  <!-- <a href= ""> </a> -->
+			  <br><span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="<a href="index.html">index.html</a>"&gt;</span>
+			  <span class="content"><strong><a href="index.html">Back to the resumes page.</a></strong></span>
+			  <span class="code" style="color:black">&lt;/a&gt;</span>
+			  </span>
+			  
+			  <!-- <a href= ""> </a> -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="<a href="css-final.html">css-final.html</a>"&gt;</span>
+			  <span class="content"><strong><a href="css-final.html">Back to this resume's title screen.</a></strong></span>
+			  <span class="code" style="color:black">&lt;/a&gt;</span>
+			  </span>
+			  
+			  <!-- <a href= ""> </a> -->
+			  <span class="hilight">
+			  <span class="code" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="<a href="../../index.html">../../index.html</a>"&gt;</span>
+			  <span class="content"><strong><a href="../../index.html">Back to the home page.</a></strong></span>
+			  <span class="code" style="color:black">&lt;/a&gt;</span>
+			  </span>
+			  
+			  <!-- </body> -->
+			  <span class="code" style="color:black">&nbsp;&lt;/body&gt;</span>
+			  
+			  <!-- </html> -->
+			  <br><span class="code" style="color:black">&nbsp;&lt;/html&gt;</span>
+
+			</p>
+
+			<!-- Used for styling purposes: -->
+			<p class="body"></p>
+		</div> <!-- Close Code Panel -->
+		<div class="footer">
+		    Guy Turner - guturner@indiana.edu
+		</div>
+      </div> <!-- Close Container -->
+    </body>
+</html>

@@ -1,0 +1,309 @@
+/* ---- Background ---- */
+body {
+    background-color:  #FFF2DA;
+    padding-top:       110px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+/* ---- Buttons ---- */
+li.navbtn {
+    float: left;
+}
+
+.btn-default {
+    margin-top:  8px;
+    margin-left: 3px;
+}
+
+.dropdown-toggle {
+    margin-left: 5px !important;
+}
+
+.btn-menu {
+    background-color: hsl(136, 1%, 96%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f4f4f4");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+    background-image: -moz-linear-gradient(top, #ffffff, #f4f4f4);
+    background-image: -ms-linear-gradient(top, #ffffff, #f4f4f4);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f4f4f4));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f4f4f4);
+    background-image: -o-linear-gradient(top, #ffffff, #f4f4f4);
+    background-image: linear-gradient(#ffffff, #f4f4f4);
+    border-color: #f4f4f4 #f4f4f4 hsl(136, 1%, 95%);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.06);
+    color:       black !important;
+    font-family: 'Ubuntu Mono', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-menu-active {
+    background-color: hsl(33, 100%, 58%) !important; 
+    background-repeat: repeat-x; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd199", endColorstr="#ff9e28");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffd199), to(#ff9e28)); 
+    background-image: -moz-linear-gradient(top, #ffd199, #ff9e28); 
+    background-image: -ms-linear-gradient(top, #ffd199, #ff9e28); 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd199), color-stop(100%, #ff9e28)); 
+    background-image: -webkit-linear-gradient(top, #ffd199, #ff9e28); 
+    background-image: -o-linear-gradient(top, #ffd199, #ff9e28); 
+    background-image: linear-gradient(#ffd199, #ff9e28); 
+    border-color: #ff9e28 #ff9e28 hsl(33, 100%, 52.5%); 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.36); 
+    color:       black !important;
+    font-family: 'Ubuntu Mono', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-menu:hover {
+    color: #FF8C27 !important;
+}
+
+.btn-first {
+    margin-left: 30px !important;
+}
+
+.btn-nav {
+    height:     85px;
+    margin-top: 2px;
+    width:      175px;
+}
+
+/* ---- Containers ---- */
+.hero-unit {
+    background-color: white;
+    border:           #FF8C27 solid 2px;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.journal-p-box {
+    margin:     10px 10px 10px 10px;
+    text-align: center;
+}
+
+.panel-heading {
+    background-color: white;
+    border:           #FF8C27 solid 2px;
+    border-radius:    5px;
+    margin-bottom:    15px;
+}
+
+.txt {
+    height: 75%;
+    margin-left:  auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.white-box {
+    background-color: white;
+    border:           #FF8C27 solid 2px;
+    border-radius:    5px;
+    height:           300px;
+    margin-bottom:    15px;
+    position:         relative;
+}
+
+.white-box-journal {
+    background-color: white;
+    border:           #FF8C27 solid 2px;
+    border-radius:    5px;
+    height:           auto;
+    margin-bottom:    15px;
+    position:         relative;
+}
+
+/* ---- Font ---- */
+.hero-txt {
+    color:       #FF8C27 !important;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size:   2em;
+}
+
+.img-sub {
+    color:       #FF8C27 !important;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size:   1.5em;
+}
+
+.project {
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size:   1.5em;
+    margin:      5px 5px 5px 5px;
+}
+
+.proj-btn {
+    position: absolute;
+    left:     5px;
+    bottom:   5px;
+}
+
+a, a:hover {
+    color: #FF8C27;
+}
+
+.journal-a, .journal-a:hover {
+    color: #008000;
+}
+
+/* ---- Headings ---- */
+h1 {
+    color:          #008000 !important;
+    font-family:    'Share Tech Mono', sans-serif;
+    padding-bottom: 25px;
+}
+
+h2 {
+    color:       #008000 !important;
+    font-family: 'Share Tech Mono', sans-serif;
+}
+
+h3 {
+    color:       #008000 !important;
+    font-family: 'Share Tech Mono', sans-serif;
+    text-align:  center;
+}
+
+.proj-head {
+    margin-left: 5px;
+}
+
+.small-head {
+    font-size: 26px !important;
+}
+
+/* ---- Images ---- */
+.project-thumb {
+    height:        200px;
+    border:        5px solid #FF8C27;
+    border-radius: 25px 0px 25px 0px;
+}
+
+/* ---- Persistent Navigation ---- */
+@media (min-width: 768px) and (max-width: 979px) {
+    .logo {
+        float:  none !important;
+        height: 60px !important;
+    }
+
+    .navbar-inner {
+        height: 100px !important;
+        text-align: center;
+    }
+
+    .dropdown-toggle {
+        margin-left: 15px !important;
+        width:       200px;
+    }
+
+    .dropdown-menu {
+        margin-left: 15px !important;
+    }
+
+    .brand {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        float:  none !important;
+        height: 60px !important;
+    }
+
+    .navbar-inner {
+        height: 100px !important;
+        text-align: center;
+    }
+
+    .dropdown-toggle {
+        margin-left: 15px !important;
+        width:       200px;
+    }
+
+    .dropdown-menu {
+        margin-left: 15px !important;
+    }
+
+    .brand {
+        visibility: hidden;
+    }
+}
+
+.brand {
+    color:       #008000;
+    font-family: 'Share Tech Mono', sans-serif;
+    margin-left: 5px;
+    margin-top:  32px;
+    float:       left;
+}
+
+.breadcrumb {
+    background-color: white;
+    font-family:      'Share Tech Mono', sans-serif;
+    font-size:        16px;
+}
+
+.breadcrumb-bar {
+    height: 40px !important;
+}
+
+.drop-nav {
+    height:      85px;
+    margin-left: 15px !important;
+    margin-top:  2px;
+    width:       200px;
+}
+
+.container-nav {
+    padding-left: 2%;
+}
+
+.logo {
+    float:       left;
+    height:      75px;
+    padding-top: 5px;
+    width:       auto;
+}
+
+.navbar-inner {
+    background-color:  white;
+    background-image:  none;
+    background-repeat: no-repeat;
+    filter:            none;
+    height:            90px;
+}
+
+.dropdown-menu {
+    width: 198px;
+}
+
+.dropdown-menu > li > a {
+    color: #008000;
+}
+
+.nav-dropdown-menu {
+    width:       220px !important;
+    margin-left: 5px;
+}
+
+.foot {
+    background-color: white;
+    height:           60px;
+    width:            100% !important;
+    text-align:       center;
+}

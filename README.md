@@ -1,3 +1,4 @@
-The OpenShift `jbossews` cartridge documentation can be found at:
+resume
+======
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#tomcat
+An overview of all of the projects I've worked on.
