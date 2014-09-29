@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Code by Guy - Visual Biography Final</title>
+      
+      <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+      <style>
+      
+	body {
+	    background-color: #3A1606;
+	}
+	   
+       img.bg {
+           position: fixed;
+           z-index:  -1;
+       }
+
+       img.film {
+           width:    750px;
+           height:   auto;
+           position: fixed;
+           top:      20px;
+           left:     290px;
+           pointer-events: none;
+           z-index:  4;
+       }
+
+       img.photo {
+           width:    auto;
+           height:   100%;
+           float:    left;
+           z-index:  3;
+       }
+
+       img.coffee {
+           position: fixed;
+           top:      100px;
+           left:     1050px;
+           z-index:  1;
+       }
+
+       img.cd {
+           position: fixed;
+           z-index:  5;
+       }
+
+       img.card {
+           position: fixed;
+           left:     880px;
+           top:      505px;
+           z-index:  1;
+       }
+
+       img.paper {
+           position:       fixed;
+           width:          950px;
+           height:         auto;
+           top:            145px;
+           left:           200px;
+           pointer-events: none;
+           z-index:        1;
+       }
+
+       div.main {
+           width:      745px;
+           height:     825px;
+           position:   fixed;
+           top:        50px;
+           left:       290px;
+           overflow-y: hidden;
+           overflow-x: auto;
+           z-index:    2;
+       }
+
+       div.photos {
+           background-color: white;
+           width:    4833px;
+           height:   135px;
+           position: absolute;
+           top:      15px;
+       }
+
+       div.text {
+           width:    4300px;
+           height:   350px;
+           position: absolute;
+           top:      330px;
+       }
+
+       div.paragraph {
+           width:        250px;
+           height:       360px;
+           float:        left;
+           margin-right: 30px;
+           overflow:     hidden;
+           font-family:  'Indie Flower', cursive;
+           font-size:    20px;
+       }
+
+       div.source {
+           width:       250px;
+           height:      360px;
+           position:    absolute;
+           font-family: 'Indie Flower', cursive;
+           font-size:   20px;
+       }
+ 
+       div.textphoto {
+           width:        500px;
+           height:       360px;
+           float:        left;
+           margin-right: 30px;
+           text-align:   center;
+           font-family:  Verdana;
+           font-size:    15px;
+           font-weight:  bold;
+       }
+
+       img.textphoto {
+           width:  auto;
+           height: 330px;
+       }
+
+       div.header {
+           width:        500px;
+           height:       50px;
+           position:     absolute;
+           font-family:  'Indie Flower', cursive;
+           font-size:    30px;
+           font-weight:  bold;
+           overflow:     hidden;
+       }
+
+       img.index {
+          width:    342px;
+          height:   auto;
+          position: fixed;
+          top:      465px;
+          z-index:  0;
+       }
+
+       div.ref {
+         width:    200px;
+         height:   150px;
+         position: fixed;
+         top:      630px;
+         left:     20px;
+         transform: rotate(30deg);
+         z-index:  1;
+       }
+       
+       a.ref {
+         color:            red;
+         font-family:      'Indie Flower', cursive;
+         font-size:        30px;
+         text-decoration:  underline;
+       }
+
+       a.source {
+         text-decoration: none;
+       }
+
+       a {
+         color: black;
+       }
+
+       a:hover {
+         color: red;
+       }
+
+      </style>
+    </head>
+  <body>
+    <img class="bg" src="img/vsb_bg_f.jpg" />
+
+    <img class="film" src="img/vsb_film_f.png" />
+
+    <img class="coffee" src="img/vsb_coffee_f.png" />
+
+    <img class="cd" src="img/vsb_cd_f.png" />
+
+    <img class="card" src="img/vsb_card_f.gif" />
+
+    <img class="paper" src="img/vsb_paper_f.png" />
+
+    <img class="index" src="img/vsb_index_f.gif" />
+
+    <div class="main">
+
+      <div class="photos"> 
+        <a class="source" href= "http://www.youtube.com/watch?v=aZdAI3pMcgU" target=_blank>
+          <img class="photo" src="img/01.jpg" />
+          <img class="photo" src="img/02.jpg" />
+          <img class="photo" src="img/03.jpg" />
+        </a>
+
+        <a class="source" href= "http://www.youtube.com/watch?v=y0RnFk-nYFg" target=_blank>
+          <img class="photo" src="img/04.jpg" />
+          <img class="photo" src="img/05.jpg" />
+          <img class="photo" src="img/06.jpg" />
+        </a>
+ 
+        <a class="source" href= "http://www.youtube.com/watch?v=C6jElKMMOWM" target=_blank>
+          <img class="photo" src="img/07.jpg" />
+          <img class="photo" src="img/08.jpg" />
+          <img class="photo" src="img/09.jpg" />
+        </a>  
+
+        <a class="source" href= "http://www.youtube.com/watch?v=rn_YodiJO6k" target=_blank>
+          <img class="photo" src="img/10.jpg" />
+          <img class="photo" src="img/11.jpg" />
+          <img class="photo" src="img/12.jpg" />
+        </a> 
+
+        <a class="source" href= "http://www.youtube.com/watch?v=Sb5aq5HcS1A" target=_blank>
+          <img class="photo" src="img/13.jpg" />
+          <img class="photo" src="img/14.jpg" />
+          <img class="photo" src="img/15.jpg" />
+        </a>     
+
+        <a class="source" href= "http://www.youtube.com/watch?v=X6YbVCyXs98" target=_blank>
+          <img class="photo" src="img/16.jpg" />
+          <img class="photo" src="img/17.jpg" />
+          <img class="photo" src="img/18.jpg" />
+        </a>
+
+        <a class="source" href= "http://www.youtube.com/watch?v=qOgFHMEJMeY" target=_blank>
+          <img class="photo" src="img/19.jpg" />
+          <img class="photo" src="img/20.jpg" />
+        </a>
+
+      </div>
+
+      <div class="header" style="top: 250px; left:350px"> The Life of Anthony Kiedis </div>
+      <div class="header" style="top: 250px; left:1380px"> The Beginning </div>
+      <div class="header" style="top: 250px; left:2225px"> The Journey   </div>
+      <div class="header" style="top: 250px; left:3175px"> The Present </div>
+      <div class="header" style="top: 250px; left:4200px"> Sources </div> 
+
+      <div class="ref">
+        <br><a class="ref" href="index.html"> VSB Home </a>
+        <br><a class="ref" href="../../../index.html"> T284 Home </a>
+      </div>
+
+      <div class="text">
+        <div class="paragraph">
+          Famed singer, actor and writer Anthony Kiedis was born on November 1, 1962, in Grand Rapids, Michigan. As the lead singer of the Red Hot Chili Peppers, Kiedis is one of best-known figures in alternative rock. His godfather was Sonny Bono, of Sonny & Cher fame. His parents split when Kiedis was 3 years old. Thereafter, he lived with his 
+        </div>
+
+        <div class="paragraph">
+          mother, Peggy, in Michigan and visited his father, John, in California. His father made most of his money selling drugs, but also dabbled in acting. While with his father, Kiedis was exposed to the Los Angeles club scene, where he got a chance to see such rock acts as the Eagles, Neil Young, Deep Purple and Rod Stewart.
+        </div>
+
+        <div class="paragraph">
+          Developing an aversion to authority at an early age, Kiedis acted out in school. He eventually convinced his mother to agree to let him live with his father in California. In his early teens, Kiedis moved in with his father and soon began experimenting with drugs. He started smoking marijuana and later tried heroin. 
+        </div>
+
+        <div class="textphoto">
+          <a class="source" href="http://stadium-arcadium.com/images/blackie-dammett-autobiography-released-july-4th-2012-independence-day-anthony-kiedis-father-red-hot-chili-peppers.jpg" target=_blank>
+            <img class="textphoto" src="img/vsb_anthonyjohn_f.jpg" />
+          </a>
+          <br>Anthony with his father, John. (2012)
+        </div>
+
+        <div class="paragraph">
+          At Fairfax High School, Kiedis met and made friends with Michael Balzary - better known later as Flea - and Hillel Slovak. Slovak had a band known as Anthym and Balzary eventually joined it as the bass player. Kiedis acted as the MC for some of their gigs. In 1982, Kiedis found inspiration for his vocal styling from the hit song,
+        </div>
+
+        <div class="paragraph">
+          "The Message," from Grandmaster Flash and the Furious Five. He started a band with friends Slovak and Flea - although they were already in different bands - with Jack Irons on drums the following year. The group that would become known as the Red Hot Chili Peppers became a popular fixture on the L.A. club scene.
+        </div>
+
+        <div class="paragraph">
+          Their 1984 self-titled debut didn't sell, but the group started to attract a following with their energetic live shows. Often over-the-top rebels, the Red Hot Chili Peppers even performed a few times while only wearing strategically placed tube socks.  
+        </div>
+
+        <div class="paragraph">
+          Kiedis's off-stage activities were starting to take over his life. He was using heroin and cocaine heavily, so much so that his bandmates kicked him out of the group for a while. Returning to Michigan for a time, Kiedis went through detox. He returned to Los Angeles and to the band, but did not stay clean for long.
+        </div>
+
+        <div class="paragraph">
+          The Red Hot Chili Peppers released their third album, The Uplift Mofo Party Plan, in 1987. The album even made it onto the Billboard 200 album charts. The following year, Kiedis experienced a great personal loss. Longtime friend and bandmate Slovak died of a heroin overdose on June 25, 1988.
+        </div>
+
+        <div class="textphoto">
+          <a class="source" href="http://25.media.tumblr.com/tumblr_l4f3nd88wL1qbcazao1_500.jpg" style="margin-left: -150px" target=_blank>
+            <img class="textphoto" src="img/vsb_slovak_f.jpg" />
+          </a>
+          <br>Anthony and Hillel Slovak.
+        </div>
+
+        <div class="paragraph" style="margin-left: -150px">
+          Working with producer Rick Rubin, the Red Hot Chili Peppers experienced a major career breakthrough with their next album, BloodSugarSexMagik, in 1991. For the first time in 2006, the Red Hot Chili Peppers reached the top of the Billboard 200 album charts with Stadium Arcadium.
+        </div>
+
+        <div class="paragraph">
+          Kiedis became a father for the first time in October 2007, when he and then-girlfriend Heather Christie welcomed a son, Everly Bear. The couple parted ways in 2008. Kiedis borrowed the title from the Red Hot Chili Peppers hit "Scar Tissue" for his candid 2004 autobiography, in which he described his 
+        </div>
+
+        <div class="paragraph">
+          extensive drug use and relationships with such women as actress Ione Skye and director Sofia Coppola. "As a person and a musician, I feel like I'm just getting started. ... I kind of look at this as the halftime report," Kiedis said to People magazine during an interview about his book.
+        </div>
+
+        <!-- Sources -->
+        <div class="source" style="top: 0px; left: 4200px;">
+          <a href="http://www.biography.com/people/anthony-kiedis-380596" target=_blank>Anthony Kiedis Biography</a>
+          <br><a href="http://trickvilla.com/wp-content/uploads/Wood-Backgrounds-Picture.jpg" target=_blank>Wood Background</a>
+          <br><a href="http://www.aaronniequist.com/png%20images/big%20paper.png" target=_blank>Paper</a>
+          <br><a href="http://kdproductions.net/wp-content/uploads/2013/07/Movie-Film-Strip.png" target=_blank>Film Strip</a>
+          <br><a href="http://fanart.tv/fanart/music/8bfac288-ccc5-448d-9573-c33ea2aa5c30/cdart/californication-4e1606ebe67a2.png" target=_blank><em>Californication</em> CD</a>
+          <br><a href="http://www.limitstogrowth.org/WEB-Graphics/CaliforniaPostcardGreetings.jpg" target=_blank>Postcard</a>
+          <br><a href="http://openclipart.org/image/800px/svg_to_png/85279/index_card.png" target=_blank>Index Card</a>
+          <br><a href="http://www.thebagel.ca/img/coffee_stain.png" target=_blank>Coffee Stain</a>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

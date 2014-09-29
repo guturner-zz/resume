@@ -14,7 +14,7 @@
 <body>
 	<div class="navbar-fixed-top">
   		<div class="navbar-inner">
-    			<div class="container-nav">
+			<div class="container-nav">
 				<!-- Site ID -->
 				<a href="index.html">
                             	<img class="logo" src="img/logo.gif" 
@@ -22,7 +22,7 @@
                                    	onmouseout="this.src='img/logo.gif'";
                             	/>
 				</a>
-    			</div>
+    		</div>
 
 			<!-- Visible on Small Displays Only -->
 			<div class="nav hidden-desktop">
@@ -32,22 +32,53 @@
       					<span class="caret"></span>
     				</button>
     				<ul class="dropdown-menu">
-      					<li><a href="projects/resume/">project ( resume );</a></li>
-      					<li><a href="projects/biography/">project ( biography );</a></li>
-                        <li><a href="projects/homepage/">project ( homepage );</a></li>
+      					<li><a href="projects/apps/">category ( apps );</a></li>
+      					<li><a href="projects/games/">category ( games );</a></li>
+						<li><a href="projects/web/">category ( web );</a></li>
+                        <li><a href="projects/art/">category ( art );</a></li>
     				</ul>
   			    </div>
 			</div>
 
-                     <!-- Visible on Large Displays Only -->
+            <!-- Visible on Large Displays Only -->
 			<div class="nav-collapse">
-                         <div class="btn-group">
-                             <a href="projects/resume/"><button type="button" class="btn btn-default btn-menu btn-nav btn-first">project ( resume );</button></a>
-                             <a href="projects/biography/"><button type="button" class="btn btn-default btn-menu btn-nav">project ( biography );</button></a>
-                             <a href="projects/homepage/"><button type="button" class="btn btn-default btn-menu btn-nav">project ( homepage );</button></a>
-                         </div>
+                <div class="btn-group">
+					<button type="button" class="btn btn-default btn-menu btn-nav btn-first dropdown-toggle" data-toggle="dropdown">
+						<a href="projects/apps/">category ( apps );</a>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+    				</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default btn-menu btn-nav dropdown-toggle" data-toggle="dropdown">
+						<a href="projects/games/">category ( games );</a>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+    				</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default btn-menu btn-nav dropdown-toggle" data-toggle="dropdown">
+						<a href="projects/web/">category ( web );</a>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+      					<li><a href="projects/web/biography/">project ( biography );</a></li>
+      					<li><a href="projects/web/homepage/">project ( homepage );</a></li>
+                        <li><a href="projects/web/resume/">project ( resume );</a></li>
+    				</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default btn-menu btn-nav dropdown-toggle" data-toggle="dropdown">
+						<a href="projects/art/">category ( art );</a>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+    				</ul>
+				</div>
 			</div> <!-- Nav-Collapse -->
-  		  </div> <!-- Navbar-Inner -->
+  		</div> <!-- Navbar-Inner -->
 	</div>
 
 	<div class="container">
@@ -58,9 +89,9 @@
 					<span class="hero-txt">
 					A project showcase for Guy Turner, software developer.
 					<br><br>
-					Currently devoted only to projects completed in a single IU Bloomington course on Web design.
+					While not all projects I've worked on are represented, this is a good sampling. Whenever possible, I've included multiple steps in the design and development process.
 					<br><br>
-					(more to come)
+					Use the drop-down menus at the top to browse categories.
 					</span>
 				</div>
 			<h1>}</h1>
@@ -69,17 +100,17 @@
 		<div class="panel panel-default">
 			<div class="panel-heading"><h3>Selected Projects</h3></div>
   			<div class="panel-body">
-    				<div class="row">
+    			<div class="row">
 			 		<div class="span5 offset1 white-box">
 						<h2 class="proj-head">// two_resumes</h2>
 						<p class="project">A stylized resume designed to represent me as an individual. This project was inspired by my interest in programming languages. The resume as a whole imitates a text editor and each page is written in the style of a specific programming language.</p>
-						<a class="btn proj-btn btn-menu" href="projects/resume/css-final.html">view ( project ) &raquo;</a>
+						<a class="btn proj-btn btn-menu" href="projects/web/resume/css-final.html">view ( project ) &raquo;</a>
 					</div>
 	   
 			 		<div class="span5 white-box">
 						<h2 class="proj-head">// visual_biography</h2>
 						<p class="project">A biography designed to portray the life of Red Hot Chili Peppers frontman Anthony Kiedis visually. The page represents a hypothetical top-down view of the singer's own desk.</p>
-						<a class="btn proj-btn btn-menu" href="projects/biography/final.html">view ( project ) &raquo;</a>
+						<a class="btn proj-btn btn-menu" href="projects/web/biography/final.html">view ( project ) &raquo;</a>
 			 			</p>
 					</div>
 	   

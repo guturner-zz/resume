@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Code by Guy - Projects</title>
-	<meta name="description" content="Project portal for Guy Turner's project showcase." />
+	<title>Code by Guy - Games</title>
+	<meta name="description" content="Games portal for Guy Turner's project showcase." />
 
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/override.css">
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/override.css">
 
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
@@ -16,10 +16,10 @@
   		<div class="navbar-inner">
     			<div class="container-nav">
 				<!-- Site ID -->
-				<a href="../index.html">
-                            	<img class="logo" src="../img/logo.gif" 
-                            		onmouseover="this.src='../img/logo-over.gif'";
-                                   	onmouseout="this.src='../img/logo.gif'";
+				<a href="../../index.html">
+                            	<img class="logo" src="../../img/logo.gif" 
+                            		onmouseover="this.src='../../img/logo-over.gif'";
+                                   	onmouseout="this.src='../../img/logo.gif'";
                             	/>
 				</a>
     			</div>
@@ -32,10 +32,10 @@
       					<span class="caret"></span>
     				</button>
     				<ul class="dropdown-menu">
-      					<li><a href="apps/">category ( apps );</a></li>
-      					<li><a href="games/">category ( games );</a></li>
-						<li><a href="web/">category ( web );</a></li>
-                        <li><a href="art/">category ( art );</a></li>
+      					<li><a href="../apps/">category ( apps );</a></li>
+      					<li><a href="index.html">category ( games );</a></li>
+						<li><a href="../web/">category ( web );</a></li>
+                        <li><a href="../art/">category ( art );</a></li>
     				</ul>
   			    </div>
 			</div>
@@ -44,7 +44,15 @@
 			<div class="nav-collapse">
                 <div class="btn-group">
 					<button type="button" class="btn btn-default btn-menu btn-nav btn-first dropdown-toggle" data-toggle="dropdown">
-						<a href="apps/">category ( apps );</a>
+						<a href="../apps/">category ( apps );</a>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+    				</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default btn-menu-active btn-nav dropdown-toggle" data-toggle="dropdown">
+						<a href="index.html">category ( games );</a>
 						<span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu">
@@ -52,26 +60,18 @@
 				</div>
 				<div class="btn-group">
 					<button type="button" class="btn btn-default btn-menu btn-nav dropdown-toggle" data-toggle="dropdown">
-						<a href="games/">category ( games );</a>
+						<a href="../web/">category ( web );</a>
 						<span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu">
+      					<li><a href="../web/biography/">project ( biography );</a></li>
+      					<li><a href="../web/homepage/">project ( homepage );</a></li>
+                        <li><a href="../web/resume/">project ( resume );</a></li>
     				</ul>
 				</div>
 				<div class="btn-group">
 					<button type="button" class="btn btn-default btn-menu btn-nav dropdown-toggle" data-toggle="dropdown">
-						<a href="web/">category ( web );</a>
-						<span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu">
-      					<li><a href="web/biography/">project ( biography );</a></li>
-      					<li><a href="web/homepage/">project ( homepage );</a></li>
-                        <li><a href="web/resume/">project ( resume );</a></li>
-    				</ul>
-				</div>
-				<div class="btn-group">
-					<button type="button" class="btn btn-default btn-menu btn-nav dropdown-toggle" data-toggle="dropdown">
-						<a href="art/">category ( art );</a>
+						<a href="../art/">category ( art );</a>
 						<span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu">
@@ -85,18 +85,19 @@
 
         <div class="panel-heading breadcrumb-bar">
             <ol class="breadcrumb">
-                <li><a href="../index.html">home</a></li> &raquo;
-                <li class="active">projects</li>
+                <li><a href="../../index.html">home</a></li> &raquo;
+				<li><a href="../index.html">projects</a></li> &raquo;
+                <li class="active">games</li>
             </ol>
         </div>
 			  
 		<div class="hero-unit">
-			<h1 class="small-head">projects() {</h1>
+			<h1 class="small-head">category(games) {</h1>
 				<div class="txt">
 					<span class="hero-txt">
-					This site provides a comprehensive sampling of projects I have worked on.
+					This is a sampling of the games I've worked on.
 					<br><br>
-					Note that not all projects are directly related to computer programming. Use the drop-down menus at the top to browse categories.
+					(much more to come!)
 					</span>
 				</div>
 			<h1 class="small-head">} </h1>
@@ -107,7 +108,7 @@
     <div id="footer">
     	<div class="container foot">
      		<p>
-               	<a href="../about.html">About Me</a> | <a href="../sitemap.html">Site Map</a>
+               	<a href="../../about.html">About Me</a> | <a href="../../sitemap.html">Site Map</a>
             </p>
 
             <p>
@@ -117,10 +118,10 @@
     </div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/jquery.backstretch.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.backstretch.min.js"></script>
 	<script type="text/javascript">
-  		$.backstretch("../img/bg.gif", {speed: 150});
+  		$.backstretch("../../img/bg.gif", {speed: 150});
 	</script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 </html>
