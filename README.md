@@ -7,7 +7,12 @@ Future
 ======
 
 • Java integration (using the Struts or Spring framework).
+
 • Mobile optimization.
+
+• Add lightbox effect for art / games.
+
+• Add project source code to GitHub.
 
 Hosting
 ======
