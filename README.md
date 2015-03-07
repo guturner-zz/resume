@@ -1,22 +1,11 @@
-Project Overview
-======
+# Interactive Resume
+**Notice:** This is not strictly a programming resume. It showcases a variety of projects created during college. For code samples, see the other repositories on my GitHub.
 
-A website (using Twitter Bootstrap) that showcases the projects I've worked on.
+http://resume-guturner.rhcloud.com/index.html
 
-Future
-======
+**Webpage Not Loading?** This website is hosted on OpenShift which places apps on free accounts in an 'idle' state after periods of inactivity. Try hitting the URL above and then waiting 5 minutes, the website should be available shortly.
 
-• Java integration (using the Struts or Spring framework).
-
-• Mobile optimization.
-
-• Add lightbox effect for art / games.
-
-• Add project source code to GitHub.
-
-Hosting
-======
-
-Website Address: http://resume-guturner.rhcloud.com/index.html
-
-This website is hosted using OpenShift Online (https://www.openshift.com/).
+# Intro
+Demonstrates knowledge of:
+* HTML5 and Twitter Bootstrap
+  * This was my first attempt at building a Bootstrap theme from the ground up.
